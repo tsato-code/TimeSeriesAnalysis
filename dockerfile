@@ -1,0 +1,6 @@
+# kaggleのpython環境をベースにする
+FROM gcr.io/kaggle-images/python:v73
+
+# 追加インストール
+RUN pip install -U pip && \
+    pip install prophet japanize-matplotlib invoke
