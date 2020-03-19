@@ -1,4 +1,5 @@
 from fbprophet import Prophet
+from fbprophet.plot import add_changepoints_to_plot
 import pandas as pd
 
 
@@ -22,6 +23,3 @@ fig1.savefig("figure/12_prophet_forecast.png")
 # 成分プロット
 fig2 = m.plot_components(forecast)
 fig2.savefig("figure/13_prophet_componets.png")
-
-
-
